@@ -26,7 +26,6 @@ while not game_end:
             'win_mark': 3,
             'tree': None
         }
-        # mcts = VanilaMCTS(n_iterations=1500, depth=15, exploration_constant=100, game_board=game_board, player=current_player)
         mcts = VanilaMCTS(**kwargs)
         best_action, best_q, depth = mcts._solve()
         action_onehot = np.zeros([state_size**2])

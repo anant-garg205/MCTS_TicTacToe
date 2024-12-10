@@ -130,7 +130,6 @@ class VanilaMCTS(object):
             return None
             
         win_mark = self.win_mark
-        # n_rows_board = len(self.tree[0,]['state'])
         n_rows_board = len(self.tree[(0,)]['state'])
         window_size = win_mark
         window_positions = range(n_rows_board - win_mark + 1)
@@ -154,7 +153,6 @@ class VanilaMCTS(object):
         for i in range(state_size):
             for j in range(state_size):
                 if leaf_state[i][j] == 0:
-                    # actions.append([(i,j), count])
                     actions.append([(i, j), count])
                 count += 1
         return actions
@@ -172,7 +170,7 @@ class VanilaMCTS(object):
             else:
                 possible_actions = self._get_valid_actions(state)
                 rand_idx = np.random.randint(low=0, high=len(possible_actions), size=1)[0]
-                print(f'possible actions: {possible_actions}')
+                # print(f'possible actions: {possible_actions}')
                 action, _ = possible_actions[rand_idx]
 
                 if previous_player == 'o':
@@ -199,7 +197,6 @@ class VanilaMCTS(object):
         node_id = child_node_id
         while not finish_backprob:
             self.tree[node_id]['n'] += 1 
-            # self.tree[node_id]['w'] =+ reward
             self.tree[node_id]['w'] += reward
             self.tree[node_id]['q'] = self.tree[node_id]['w'] / self.tree[node_id]['n']
             parent_id = self.tree[node_id]['parent']
@@ -213,8 +210,10 @@ class VanilaMCTS(object):
 
     def _solve(self):
         for i in range(self.n_iterations):
+        # for i in range(5):
             leaf_node_id, depth_searched = self.selection()
             child_node_id = self.expansion(leaf_node_id)
+            # print(f'leaf node id: {leaf_node_id}, child_node_id: {child_node_id}')
             winner = self._simulation(child_node_id)
             self._backprop(child_node_id, winner)
 
@@ -231,7 +230,7 @@ class VanilaMCTS(object):
                 best_q = q
                 best_action = a
 
-        fig = plt.figure(figsize=(5,5))
+        fig = plt.figure(figsize=(7,7))
         for a in action_candidates:
             _node = self.tree[(0,)+(a,)]
             _state = deepcopy(_node['state'])
@@ -246,6 +245,7 @@ class VanilaMCTS(object):
             plt.yticks([], [])
             plt.title('[%d] q=%.2f' % (a,_q))
         plt.draw()
+        plt.savefig(f'q-value.png')
         plt.waitforbuttonpress(0)
         plt.close(fig)
 
