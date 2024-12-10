@@ -8,6 +8,17 @@ This repository implements Monte Carlo Tree Search (MCTS) for the classic game o
 * Visualization: Print the game board to track moves in real time.
 * Customizable MCTS Parameters: Adjust the number of simulations, exploration depth, and more.
 
+<p align="center">
+  <figure>
+    <img src="image1_url" alt="Image 1" width="45%">
+    <figcaption>Caption for Image 1</figcaption>
+  </figure>
+  <figure>
+    <img src="image2_url" alt="Image 2" width="45%">
+    <figcaption>Caption for Image 2</figcaption>
+  </figure>
+</p>
+
 ## Installation
 Clone the repository
 ```
