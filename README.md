@@ -18,6 +18,7 @@ This repository implements Monte Carlo Tree Search (MCTS) for the classic game o
     <figcaption>Caption for Image 2</figcaption>
   </figure>
 </p>
+![First Image](https://images.pexels.com/photos/585759/pexels-photo-585759.jpeg?h=750&w=1260)|![Second Image](https://images.pexels.com/photos/1335115/pexels-photo-1335115.jpeg?h=750&w=1260)
 
 ## Installation
 Clone the repository
