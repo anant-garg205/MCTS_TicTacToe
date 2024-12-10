@@ -11,10 +11,10 @@ This repository implements Monte Carlo Tree Search (MCTS) for the classic game o
 <table>
   <tr>
     <td>
-      <img src="image1.png" alt="Image 1" width="400">
+      <img src="https://github.com/anant-garg205/MCTS_TicTacToe/blob/master/assets/MCTS-Q-value.png" alt="Image 1" width="400">
     </td>
     <td>
-      <img src="image2.png" alt="Image 2" width="400">
+      <img src="https://github.com/anant-garg205/MCTS_TicTacToe/blob/master/assets/TicTacToe.png" alt="Image 2" width="400">
     </td>
   </tr>
 </table>
