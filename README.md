@@ -8,16 +8,16 @@ This repository implements Monte Carlo Tree Search (MCTS) for the classic game o
 * Visualization: Print the game board to track moves in real time.
 * Customizable MCTS Parameters: Adjust the number of simulations, exploration depth, and more.
 
-<p align="center">
-  <figure>
-    <img src="https://github.com/anant-garg205/MCTS_TicTacToe/blob/master/assets/TicTacToe.png" alt="Image 1" width="40%">
-    <figcaption>Caption for Image 1</figcaption>
-  </figure>
-  <figure>
-    <img src="https://github.com/anant-garg205/MCTS_TicTacToe/blob/master/assets/MCTS-Q-value.png" alt="Image 2" width="50%">
-    <figcaption>Caption for Image 2</figcaption>
-  </figure>
-</p>
+<table>
+  <tr>
+    <td>
+      <img src="image1.png" alt="Image 1" width="400">
+    </td>
+    <td>
+      <img src="image2.png" alt="Image 2" width="400">
+    </td>
+  </tr>
+</table>
 
 ## Installation
 Clone the repository
