@@ -18,7 +18,6 @@ This repository implements Monte Carlo Tree Search (MCTS) for the classic game o
     <figcaption>Caption for Image 2</figcaption>
   </figure>
 </p>
-![First Image](https://github.com/anant-garg205/MCTS_TicTacToe/blob/master/assets/MCTS-Q-value.png)|![Second Image](https://github.com/anant-garg205/MCTS_TicTacToe/blob/master/assets/TicTacToe.png)
 
 ## Installation
 Clone the repository
